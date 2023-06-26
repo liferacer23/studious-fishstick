@@ -1,0 +1,24 @@
+modules:
+  macro:
+    - key: skeleton-confluence-hello-world
+      resource: main
+      resolver:
+        function: resolver
+      title: skeleton-confluence
+      description: Inserts Hello world!
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+    tunnel:
+      port: 3000
+permissions:
+  content:
+    styles:
+      - unsafe-inline
+    scripts:
+      - unsafe-inline
+app:
+  id: ari:cloud:ecosystem::app/a544a5e2-9c4e-4225-a716-661f4d7c9a1f
