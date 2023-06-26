@@ -41,7 +41,7 @@ function App() {
       <div
         style={{
           width: "500px",
-        
+          flexDirection: "column" ,
           display: "flex",
           justifyContent: "flex-start",
           alignItems: "center",
@@ -53,6 +53,18 @@ function App() {
         name="area"
         placeholder="Enter your text here"
       />
+      <div
+        style={{
+          marginTop: "10px",
+        }}
+      >
+      <Button
+        type="submit"
+        appearance="primary"
+      >
+        Submit
+      </Button>
+      </div>
       </div>
       {/* {data ? data : "Loading..."} */}
     </div>
